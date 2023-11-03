@@ -1,0 +1,37 @@
+#about-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/about-bg-5.jpg");
+}
+
+.small-sep {
+    border: solid 2px var(--pink);
+    width: 50px;
+}
+
+.list li {
+    margin-left: 0px;
+}
+
+#mission * {
+    text-align: left;
+}
+
+.row .bloc {
+    /* padding-right: 10rem; */
+}
+
+.padding_x {                    /* a appliquer sur row*/
+    padding: 4vh 10vw;
+}
+
+
+.hyphen {
+    color: var(--pink);
+    font-weight: 700;
+    padding-right: 20px;
+
+}
+
+.none-list {
+    list-style-type: none;
+    text-align: left;
+}
