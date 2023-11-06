@@ -7,31 +7,15 @@
     width: 50px;
 }
 
-.list li {
-    margin-left: 0px;
-}
-
-#mission * {
+section#mission * {
     text-align: left;
 }
 
-.row .bloc {
-    /* padding-right: 10rem; */
-}
 
 .padding_x {                    /* a appliquer sur row*/
-    padding: 4vh 10vw;
+    padding: 4vh 5vw;
 }
 
 
-.hyphen {
-    color: var(--pink);
-    font-weight: 700;
-    padding-right: 20px;
 
-}
 
-.none-list {
-    list-style-type: none;
-    text-align: left;
-}
