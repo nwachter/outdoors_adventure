@@ -426,7 +426,7 @@ blockquote > p {
 
 /* Menu burger */
 
-.burger-icon span {
+/* .burger-icon span {
     display: block;
     width: 35px;
     height: 5px;
@@ -434,9 +434,7 @@ blockquote > p {
     margin: 6px 0;
 }
 
-/* Icône burger */
 
-/* Devrait marcher pour petit écran */
 
 .small-nav {
     display: flex;
@@ -444,8 +442,7 @@ blockquote > p {
     z-index: 1;
 }
 #openBtn {
-    /* position: absolute;
-    top: 0; */
+ 
     position: relative;
     padding: 11px 11px 5px 11px;
     background-color: var(--pink);
@@ -458,7 +455,7 @@ blockquote > p {
 }
 
 #closeBtn {
-    /* position: absolute; */
+ 
     top: -100px;
     padding: 11px 11px 11px 11px;
     background-color: var(--pink);
@@ -477,7 +474,7 @@ blockquote > p {
 }
 
 #closeBtn:not(.active) {
-    /* left: -250px; */
+ 
     top: -100px;
 }
 
@@ -490,7 +487,7 @@ blockquote > p {
     top: -100px;
 }
 
-/* Si media > 640px width cacher btn burger */
+
 
 @media screen and (width>800px) {
     header {
@@ -504,13 +501,13 @@ blockquote > p {
     }
 }
 
-/* Si media > 800 menu-list est ok */
+
 #menu-list {
     position: relative;
     top: 0;
 }
 
-/* Si media < 800 cacher menu-list */
+
 @media screen and (width<800px) {
     header {
         position: relative;
@@ -529,9 +526,7 @@ blockquote > p {
     }
 
     #menu-list.active {
-        /* top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
+
         position: absolute;
     }
 
@@ -553,7 +548,7 @@ blockquote > p {
     }
 }
 
-/* Si menu-list.active, changer apparence et le placer dans le viewport */
+
 #menu-list.active {
     top: 70px;
     min-width: 100vw;
@@ -561,9 +556,11 @@ blockquote > p {
     flex-direction: column;
     left: 0;
     padding: 1em 1em;
-}
+} */
 
-/* Menu responsive quand allumé et écran > 800px */
+/*  NE PAS DECOMMENTER
+
+Menu responsive quand allumé et écran > 800px */
 /* @media screen and (width>800px) {
  #menu-list.active {
     top: 70px;
