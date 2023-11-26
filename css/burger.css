@@ -1,20 +1,79 @@
+nav {
+    display: flex;
+    padding: 0px;
+    width: 80vw;
+    justify-content: space-between;
+    min-height: 70px;
+    /* padding: 0rem 15rem; */
+    align-items: center;
+    flex-wrap: nowrap;
+    z-index: 2;
+}
+
+@media screen and (min-width: 1251px) {
+    nav {
+        width: 1240px;
+        /* padding: 0px 20px; */
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    nav {
+        width: 100%;
+        padding: 0px 20px;
+    }
+}
+
+
+
+nav > ul {
+    width: 50%;
+    position: relative;
+    flex: 1 1 auto;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul li {
+    padding: 0px 10px;
+}
+
+nav > div {
+    width: 50%;
+    flex: 1 3 50%;
+}
+
+/* nav>* {
+    width: 100%;
+    display: flex;
+}  */
+
+.menu-link {
+    text-decoration: none;
+    color: white;
+}
+
 /* Menu burger */
 
-.burger-icon span {
+/* .burger-icon span {
     display: block;
     width: 35px;
     height: 5px;
     background-color: black;
     margin: 6px 0;
-}
+} */
 
 /* Icône burger */
 
 /* Devrait marcher pour petit écran */
 
-.small-nav {
+div.small-nav {
     display: flex;
-    justify-items: space-between;
+    justify-content: space-between;
+    align-items: center;
     z-index: 1;
 }
 #openBtn {
@@ -45,51 +104,50 @@
     height: 20px;
 }
 
-#closeBtn.active {
+/* #closeBtn.active {
     left: 200px;
     top: 80px;
-}
+} */
 
-#closeBtn:not(.active) {
-    /* left: -250px; */
+/* #closeBtn:not(.active) {
+    left: -250px;
     top: -100px;
-}
+} */
 
 #openBtn.active {
     top: 0;
     position: relative;
 }
 
-#openBtn:not(.active) {
+/* #openBtn:not(.active) {
     top: -100px;
-}
+} */
 
-/* Si media > 640px width cacher btn burger */
 
-@media screen and (width>800px) {
-    header {
-        background: none;
-    }
-
-    #openBtn,
-    #openBtn.active {
-        position: absolute;
-        top: -100px;
-    }
-}
-
-/* Si media > 800 menu-list est ok */
-#menu-list {
-    position: relative;
-    top: 0;
-}
 
 /* Si media < 800 cacher menu-list */
 @media screen and (width<800px) {
+    nav {
+        flex-direction: column;
+        padding: 0 20px;
+        min-height: 70px;
+        align-items: flex-start;
+    }
+
+    .small-nav {
+        min-height: 70px;
+        display: flex;
+    }
+
     header {
         position: relative;
         border-bottom: 1px solid #eaeaea;
         background-color: white;
+    }
+
+    nav > div {
+        width: 100%;
+        /* flex: 1 3 50%; */
     }
 
     nav img {
@@ -97,45 +155,81 @@
         height: 34px;
     }
 
-    #menu-list {
+    ul#menu-list {
         position: absolute;
-        top: -100px;
-    }
-
-    #menu-list.active {
-        /* top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
-        position: absolute;
-    }
-
-    #menu-list.active > li {
-        border-bottom: 1px solid #dddddd;
-        padding: 10px 20px 10px 20px;
-    }
-
-    #menu-list.active > li > a {
-        color: #404040;
-    }
-
-    .button-container {
+        /* top: -100px; */
         display: none;
     }
 
-    #menu-list.active > li > a:active {
+    ul#menu-list.active {
+        /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        min-width: 100%;
+    }
+
+    ul#menu-list.active > li {
+        border-bottom: 1px solid #dddddd;
+        padding: 10px 20px 10px 20px;
+        min-width: 100%;
+    }
+
+    ul#menu-list.active > li > a {
+        color: #404040;
+    }
+
+     #nav-cta {
+        display: none;
+    } 
+
+    ul#menu-list.active > li > a:active {
         color: #da1c4b;
     }
 }
 
+/* Si media > 640px width cacher btn burger */
+
+@media screen and (width>=800px) {
+    header {
+        background: none;
+    }
+
+    #openBtn, #closeBtn {
+        top:0;
+        position: relative;
+        display:none;
+    }
+
+    #openBtn.active, #closeBtn.active {
+        /* position: absolute;  */
+        /* top: -100px; */
+        top: 0;
+        position: relative;
+    }
+
+    
+/* Si media > 800 menu-list est ok */
+#menu-list {
+    position: relative;
+    top: 0;
+}
+
 /* Si menu-list.active, changer apparence et le placer dans le viewport */
-#menu-list.active {
+ul#menu-list.active {
     top: 70px;
     min-width: 100vw;
-    display: flex;
+    /* display: flex; */
+    display: none;
     flex-direction: column;
     left: 0;
     padding: 1em 1em;
 }
+}
+
 
 /* Menu responsive quand allumé et écran > 800px */
 /* @media screen and (width>800px) {
