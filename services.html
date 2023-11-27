@@ -4,35 +4,44 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/burger.css">
     <link rel="stylesheet" href="./css/services.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Home - Outdoors Adventure</title>
+    <title>Services - Outdoors Adventure</title>
 
 </head>
 
 <body>
-    <!-- HEADER -->
+    <header class="main-header" id="services-header">
 
-    <header id="services-header">
-        <nav class="index-nav">
-
-            <div>
-                <img src="./assets/white-logo.png" alt="" />
+        <nav class="top-nav" id="topnav">
+            <div class="small-nav">
+                <img src="./assets/white-logo.png" alt="logo" />
+                <a href="#" id="openBtn" class="active">
+                    <span class="burger-icon ahfb-svg-iconset ast-inline-flex svg-baseline"><svg
+                            class="ast-mobile-svg ast-menu-svg" fill="currentColor" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M3 13h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 7h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 19h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1z">
+                            </path>
+                        </svg></span>
+                </a>
             </div>
-
-
-            <ul class="menu-list">
+            <ul id="menu-list">
                 <li><a href="index.html" class="menu-link">Home</a></li>
                 <li><a href="about.html" class="menu-link">About</a></li>
                 <li><a href="services.html" class="menu-link">Services</a></li>
                 <li><a href="projects.html" class="menu-link">Projets</a></li>
                 <li><a href="contact.html" class="menu-link">Contact</a></li>
-                <li class="button-container"><a href="#" class="menu-link uppercase">Take Action</a></li>
+                <li class="button-container" id="nav-cta"><a href="#" class="menu-link uppercase">Take Action</a>
+                </li>
             </ul>
 
         </nav>
@@ -41,10 +50,7 @@
 
     </header>
 
-    <!-- MAIN -->
     <main>
-        <!-- Section-1 -->
-
         <section class="section1 text-center">
 
             <div class="section-header align-center">
@@ -84,14 +90,12 @@
                     </p>
                 </div>
             </div>
-
             </div>
-
         </section>
 
         <section class="section1 text-right" id="mission">
 
-            <div class="row padding_x">
+            <div class="row">
 
                 <div class="bloc align-start">
                     <h3>Why Outdoor Adventure</h3>
@@ -128,12 +132,11 @@
         </section>
     </main>
 
-    <!-- FOOTER -->
     <footer class="main-footer">
         <p>123 Fifth Avenue, NY 10160, New York, USA | Phone: 800-123-456 | Email: contact@example.com</p>
         <p>Copyright © 2023 Outdoor Adventure</p>
     </footer>
-    <script src="./js/burger.js"></script>
+    <script src="./js/script.js"></script>
 
 </body>
 

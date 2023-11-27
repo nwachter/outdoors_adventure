@@ -12,10 +12,6 @@ section#mission * {
 }
 
 
-.padding_x {                    /* a appliquer sur row*/
+.padding_x {
     padding: 4vh 5vw;
 }
-
-
-
-
